@@ -28,15 +28,15 @@
   font-size: 20px;
   line-height: 1.2;
   color: #212121;
+}
+
+.card__title {
   text-overflow: ellipsis;
   overflow: hidden;
   line-clamp: 3;
-  display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  max-width: 353px;
   white-space: nowrap;
-  display: block;
 }
 
 @media screen and (max-width: 627px) {
