@@ -20,3 +20,7 @@ This project will evaluate the topics learned on Sprint 3. Such as working with 
 This webpage is deployed to Github
 
 - [Click here](https://marianaa-vrod.github.io/se_project_spots/index.html)
+
+## Video
+
+- [Click here](https://drive.google.com/file/d/117NuPIugX2tJOoDdh8EOk677Ny3C2XRo/view?usp=sharing)
