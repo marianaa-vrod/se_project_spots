@@ -33,19 +33,20 @@
   align-items: center;
   margin: 12px 0 0;
   font-weight: 500;
-  font-size: 20px;
   line-height: 1.2;
   color: #212121;
 }
 
 .card__title {
+  margin: 0;
+  max-width: 350px;
+  font-size: 20px;
   text-overflow: ellipsis;
   overflow: hidden;
   line-clamp: 3;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   white-space: nowrap;
-  max-width: 350px;
 }
 
 @media screen and (max-width: 627px) {
@@ -56,5 +57,10 @@
   .card__title {
     max-width: 250px;
     font-size: 16px;
+  }
+
+  .card__like-button {
+    width: 20px;
+    height: 18px;
   }
 }
