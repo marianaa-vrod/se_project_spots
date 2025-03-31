@@ -31,6 +31,24 @@ const profileDescriptionElement = document.querySelector(
   ".profile__description"
 );
 
+const cardTemplate = document.querySelector("#card-template");
+const cardsColumn = document.querySelector(".cards__column");
+
+function getCardElement(data) {
+  const cardElement = cardTemplate.content
+    .querySelector(".card")
+    .cloneNode(true);
+
+  const cardNameElement = cardElement.querySelector(".card__title");
+  const cardImageElement = cardElement.querySelector(".card__image");
+
+  cardNameElement.textContent = data.name;
+  cardImageElement.src = data.link;
+  cardImageElement.alt = data.name;
+
+  return cardElement;
+}
+
 const editModal = document.querySelector("#edit-modal");
 const editFormElement = editModal.querySelector(".modal__form");
 const editModalCloseButton = editModal.querySelector(".modal__close-button");
@@ -57,3 +75,8 @@ function handleEditFormSubmit(evt) {
 profileEditButton.addEventListener("click", openModal);
 editModalCloseButton.addEventListener("click", closeModal);
 editFormElement.addEventListener("submit", handleEditFormSubmit);
+
+for (let i = 0; i < initialCards.length; i++) {
+  const cardElement = getCardElement(initialCards[i]);
+  cardsColumn.prepend(cardElement);
+}
